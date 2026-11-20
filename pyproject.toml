@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retina-fragility"
+version = "0.1.0"
+description = "Structural robustness (fragility) of OCTA retinal vessel graphs and its association with diabetic retinopathy"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "networkx>=3.0",
+    "igraph>=0.10",
+    "scikit-image>=0.21",
+    "scikit-learn>=1.3",
+    "statsmodels>=0.14",
+    "matplotlib>=3.7",
+    "Pillow>=9.0",
+    "PyYAML>=6.0",
+    "tifffile>=2023.1",
+]
+
+[project.optional-dependencies]
+deep = ["torch>=2.0", "torchvision>=0.15"]
+skan = ["skan>=0.11"]
+dev = ["pytest>=7", "ruff>=0.4"]
+download = ["boto3>=1.34", "requests>=2.31"]
+
+[project.scripts]
+retina-fragility = "retina_fragility.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["retina_fragility*", "scripts*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: longer end-to-end tests",
+]
+
+[tool.ruff]
+line-length = 100

@@ -1,0 +1,42 @@
+{
+  "3mm": {
+    "eyes": 179,
+    "dr_eyes": 29,
+    "reference_median": {
+      "vessel_density": 0.4514700846338241,
+      "n_endpoints_post": 189.0,
+      "total_length_mm_post": 230.3939891314621
+    },
+    "dilated_median": {
+      "vessel_density": 0.8083722057309021,
+      "n_endpoints_post": 6.0,
+      "total_length_mm_post": 229.0643959787282
+    },
+    "median_within_eye_relative_change_percent": {
+      "vessel_density": 79.15421980933579,
+      "n_endpoints_post": -96.72727272727273,
+      "total_length_mm_post": -0.794168541050777
+    },
+    "median_within_eye_area_fraction_change_percentage_points": 35.6599062062245
+  },
+  "6mm": {
+    "eyes": 116,
+    "dr_eyes": 35,
+    "reference_median": {
+      "vessel_density": 0.4007802854278101,
+      "n_endpoints_post": 742.0,
+      "total_length_mm_post": 515.2433244339729
+    },
+    "dilated_median": {
+      "vessel_density": 0.7412954162223644,
+      "n_endpoints_post": 67.5,
+      "total_length_mm_post": 543.466350943422
+    },
+    "median_within_eye_relative_change_percent": {
+      "vessel_density": 84.27165760842183,
+      "n_endpoints_post": -90.89661146898982,
+      "total_length_mm_post": 4.172058054827977
+    },
+    "median_within_eye_area_fraction_change_percentage_points": 34.24171039799768
+  }
+}

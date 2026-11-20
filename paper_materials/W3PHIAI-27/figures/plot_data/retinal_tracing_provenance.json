@@ -1,0 +1,50 @@
+{
+  "dataset": "OCTA-500",
+  "dataset_url": "https://ieee-dataport.org/open-access/octa-500",
+  "primary_publication": "https://doi.org/10.1016/j.media.2024.103092",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "eye": "OCTA500_10438",
+  "selection": "First 3-mm Part A entry by blinded packet order. The crop deliberately illustrates a local mask join; diagnosis was not used.",
+  "projection": "OCTA(ILM_OPL)",
+  "pixel_size_um": 9.86842105263158,
+  "zero_based_crop": {
+    "top": 106,
+    "left": 124,
+    "height": 25,
+    "width": 25
+  },
+  "example_tip_pair_full_scan_row_column": [
+    [
+      117,
+      138
+    ],
+    [
+      118,
+      135
+    ]
+  ],
+  "pair_connected_in_crop_mask_eight_neighbors": {
+    "reference": false,
+    "dilated": true
+  },
+  "counts": {
+    "reference": {
+      "crop_interior_endpoints": 3,
+      "full_graph_interior_endpoints": 125
+    },
+    "dilated": {
+      "crop_interior_endpoints": 0,
+      "full_graph_interior_endpoints": 2
+    }
+  },
+  "display": "Unaltered grayscale projection, magnification without smoothing, union-mask outline, retained centerline pixels (including junction clusters), and degree-one interior nodes from whole-field graphs.",
+  "sha256_by_project_path": {
+    "data/raw/octa500/extracted/OCTA_3mm/Projection Maps/OCTA(ILM_OPL)/10438.bmp": "790cf838ac3662894698110d36173ae148a655659a4f1cbac6d3d2fe8b6a2250",
+    "data/raw/octa500/extracted/Label/GT_Capillary/10438.bmp": "77419315480af3fde9ed9bd5b657cf0e23364346072cf9060338756ac7c3c01d",
+    "data/raw/octa500/extracted/Label/GT_LargeVessel/10438.bmp": "39e6441d8bb57c784c510787d9d2eb180cd4110717e5444e317fc0470efea8af",
+    "data/raw/octa500/extracted/Label/GT_FAZ/10438.bmp": "51ff0d45c2505845213706a6ece7d0349eb698fdb7cab4d536b02c02865cb770",
+    "outputs/exploratory_20261116_step0/perturbation/dilate1/masks/OCTA500_10438.png": "406c9bc16bb6b17a41dd61eb310fb2352b4be8665ce1096de9b5e48ba9194f3a",
+    "outputs/exploratory_20261009/pipeline/images/OCTA500_10438/graph.json": "f03362fb0cf3b20c3adbd0212498d94de79608b6894c6a84f6009fd07ba1a8c8",
+    "outputs/exploratory_20261116_step0/perturbation/dilate1/pipeline/images/OCTA500_10438/graph.json": "840ba87dcbc75b4c8659505c97a3a55be2aad4d77fc8d6cb9c92f1753f99a8b4"
+  }
+}

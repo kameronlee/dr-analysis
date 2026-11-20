@@ -1,0 +1,176 @@
+{
+  "analysis": "Post hoc reviewer-requested check of one-pixel capillary-mask dilation and interior endpoints. All intervals nominal.",
+  "unit": "Count of degree-one nodes on the cleaned graph more than five pixels from both FAZ and image border, divided by original analysis area in mm\u00b2 (identical under both masks).",
+  "change": "Dilated minus original endpoint density for the same eye. The interval for the between-diagnosis difference in changes uses HC3 on one pairwise change per participant.",
+  "models": "Separate OLS regressions within each field in endpoints/mm\u00b2, with or without the original vessel length density. Adjusted fit uses one common length slope within field for each outcome; estimates are model summaries and are sensitive to lack of support and slope heterogeneity. Never substitute the dilated length density in these fits.",
+  "cohort": 295,
+  "ordered_graph_and_faz_mask_sha256": "4bcce2b8d70b85ccc7972197f466229407205ce22a058642d8a631da485ee3aa",
+  "fields_mm": {
+    "3": {
+      "observed": {
+        "reference": {
+          "dr_minus_healthy": 7.2447505792531475,
+          "hc3_ci95": [
+            2.4787726637885505,
+            12.010728494717744
+          ]
+        },
+        "dilated": {
+          "dr_minus_healthy": 3.155271154594404,
+          "hc3_ci95": [
+            1.533061137062459,
+            4.777481172126349
+          ]
+        },
+        "change": {
+          "dr_minus_healthy": -4.089479424658743,
+          "hc3_ci95": [
+            -7.720366899639098,
+            -0.45859194967838723
+          ]
+        }
+      },
+      "at_common_original_length": {
+        "reference": {
+          "dr_minus_healthy": -10.800476163450648,
+          "hc3_ci95": [
+            -14.071847974276912,
+            -7.529104352624385
+          ]
+        },
+        "dilated": {
+          "dr_minus_healthy": 0.17530426693503198,
+          "hc3_ci95": [
+            -0.3725317989057284,
+            0.7231403327757924
+          ]
+        },
+        "change": {
+          "dr_minus_healthy": 10.975780430385678,
+          "hc3_ci95": [
+            7.565920067849442,
+            14.385640792921913
+          ]
+        }
+      },
+      "by_diagnosis": {
+        "DR": {
+          "n": 29,
+          "mean_per_mm2": {
+            "reference": 27.909866620072336,
+            "dilated": 3.6209139623408144,
+            "change": -24.28895265773152
+          },
+          "median_per_mm2": {
+            "reference": 25.433156953253018,
+            "dilated": 1.2640730299809735,
+            "change": -22.468967646146886
+          }
+        },
+        "NORMAL": {
+          "n": 150,
+          "mean_per_mm2": {
+            "reference": 20.66511604081919,
+            "dilated": 0.4656428077464102,
+            "change": -20.199473233072776
+          },
+          "median_per_mm2": {
+            "reference": 18.24388110955772,
+            "dilated": 0.2504789095595822,
+            "change": -17.775366714838995
+          }
+        }
+      },
+      "overall_median_per_mm2": {
+        "reference": 18.768214365852337,
+        "dilated": 0.25939913464385805,
+        "change": -18.418734429496755
+      },
+      "rank_correlation": 0.7347622666558241,
+      "one_pixel_um": 9.86842105263158
+    },
+    "6": {
+      "observed": {
+        "reference": {
+          "dr_minus_healthy": 0.7398584651712206,
+          "hc3_ci95": [
+            -1.5485006132129708,
+            3.028217543555412
+          ]
+        },
+        "dilated": {
+          "dr_minus_healthy": 1.1129239872446655,
+          "hc3_ci95": [
+            0.274517382856715,
+            1.9513305916326158
+          ]
+        },
+        "change": {
+          "dr_minus_healthy": 0.37306552207344534,
+          "hc3_ci95": [
+            -1.4378984079321102,
+            2.1840294520790007
+          ]
+        }
+      },
+      "at_common_original_length": {
+        "reference": {
+          "dr_minus_healthy": -3.1289733347209303,
+          "hc3_ci95": [
+            -4.867601419701142,
+            -1.390345249740719
+          ]
+        },
+        "dilated": {
+          "dr_minus_healthy": -0.36176361409673297,
+          "hc3_ci95": [
+            -0.6665200191512113,
+            -0.05700720904225465
+          ]
+        },
+        "change": {
+          "dr_minus_healthy": 2.767209720624197,
+          "hc3_ci95": [
+            1.044685541031506,
+            4.489733900216888
+          ]
+        }
+      },
+      "by_diagnosis": {
+        "DR": {
+          "n": 35,
+          "mean_per_mm2": {
+            "reference": 20.84989865409312,
+            "dilated": 3.016836237781809,
+            "change": -17.83306241631131
+          },
+          "median_per_mm2": {
+            "reference": 20.529488507647816,
+            "dilated": 2.7482487223567107,
+            "change": -17.638422558491154
+          }
+        },
+        "NORMAL": {
+          "n": 81,
+          "mean_per_mm2": {
+            "reference": 20.11004018892189,
+            "dilated": 1.9039122505371433,
+            "change": -18.206127938384746
+          },
+          "median_per_mm2": {
+            "reference": 19.352139830123136,
+            "dilated": 1.21919093618624,
+            "change": -17.734724400778518
+          }
+        }
+      },
+      "overall_median_per_mm2": {
+        "reference": 19.51820274919925,
+        "dilated": 1.589996883329241,
+        "change": -17.686869012394354
+      },
+      "rank_correlation": 0.8088186675892823,
+      "one_pixel_um": 15.0
+    }
+  }
+}

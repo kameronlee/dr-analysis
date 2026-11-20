@@ -1,0 +1,67 @@
+{
+  "status": "Independent, post hoc review diagnostics. All comparisons reuse the discovery cohort.",
+  "endpoint": "Degree-one nodes more than five native pixels from the FAZ and image edge, divided by original analysis area in square millimeters. Rank correlation compares paired eyes within each field. Adjusted models use each tracer's own field-specific outcome SD and length density, with a field indicator and common length slope.",
+  "discrimination": "AUROC computed by scan field within each of ten repeats on stored predictions from the original pooled cross-validated models. Models were not refitted by field.",
+  "cross_tracer_interior_endpoints": {
+    "adaptive": {
+      "graph_and_faz_digest_sorted_by_image_id": "ad38bf2e4ffd7ed7147bb7fc800bfd164ec9f081ddf680425d19a7161f5a0e4d",
+      "adjusted_dr_minus_healthy_in_tracer_own_field_sd": -1.0806765098294875,
+      "nominal_hc3_ci95": [
+        -1.439215381161374,
+        -0.7221376384976009
+      ],
+      "by_field_mm": {
+        "3": {
+          "eyes": 179,
+          "dr_eyes": 29,
+          "spearman_reference_vs_tracer": 0.6519573996191911,
+          "median_tracer_minus_reference_endpoints_per_mm2": -3.525689394651611
+        },
+        "6": {
+          "eyes": 116,
+          "dr_eyes": 35,
+          "spearman_reference_vs_tracer": 0.5754507361703762,
+          "median_tracer_minus_reference_endpoints_per_mm2": -1.3484204054577305
+        }
+      }
+    },
+    "frangi_capillary": {
+      "graph_and_faz_digest_sorted_by_image_id": "f351feb1ff425071dead7684af7629dd10bea0422aa9037f34653d3fdeb59e42",
+      "adjusted_dr_minus_healthy_in_tracer_own_field_sd": -1.3621367398935809,
+      "nominal_hc3_ci95": [
+        -1.6050722322462239,
+        -1.1192012475409379
+      ],
+      "by_field_mm": {
+        "3": {
+          "eyes": 179,
+          "dr_eyes": 29,
+          "spearman_reference_vs_tracer": 0.5547758039880317,
+          "median_tracer_minus_reference_endpoints_per_mm2": -10.564914197162343
+        },
+        "6": {
+          "eyes": 116,
+          "dr_eyes": 35,
+          "spearman_reference_vs_tracer": 0.5897820320608927,
+          "median_tracer_minus_reference_endpoints_per_mm2": -8.627332421803189
+        }
+      }
+    }
+  },
+  "existing_model_discrimination_by_field_mm": {
+    "3": {
+      "eyes": 179,
+      "dr_eyes": 29,
+      "baseline_mean_auroc": 0.9520459770114943,
+      "augmented_mean_auroc": 0.9503908045977012,
+      "mean_paired_delta": -0.0016551724137931268
+    },
+    "6": {
+      "eyes": 116,
+      "dr_eyes": 35,
+      "baseline_mean_auroc": 0.805432098765432,
+      "augmented_mean_auroc": 0.8002469135802469,
+      "mean_paired_delta": -0.0051851851851852145
+    }
+  }
+}

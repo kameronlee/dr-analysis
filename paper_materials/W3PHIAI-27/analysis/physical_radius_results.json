@@ -1,0 +1,97 @@
+{
+  "status": "Reviewer-requested post hoc sensitivity. Neither a repeat scan nor an independent tracing.",
+  "radius_um": 15.0,
+  "operation": "Include native pixel centers at Euclidean physical distance at most 15 micrometers from an original capillary-mask pixel, then add the original large-vessel mask.",
+  "endpoint_rule": "Rebuild and clean graphs with the archived pipeline; retain degree-one nodes more than five native pixels from FAZ and image edge. Use the original per-eye analysis area.",
+  "paired_change": "Each eye's 15-micrometer measurement minus its original measurement; medians taken after differencing.",
+  "kernel_by_field": {
+    "3": {
+      "pitch_um": 9.86842105263158,
+      "grid": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "max_included_center_distance_um": 13.956054891839758
+    },
+    "6": {
+      "pitch_um": 15.0,
+      "grid": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "max_included_center_distance_um": 15.0
+    }
+  },
+  "validation": {
+    "cross_dilated_masks_pixel_identical_to_archive": 295,
+    "original_graphs_checked_against_archive": [
+      "OCTA500_10001",
+      "OCTA500_10005",
+      "OCTA500_10301",
+      "OCTA500_10304"
+    ],
+    "cross_dilation_graphs_checked_all_six_mm": 116,
+    "cross_dilation_graphs_checked_three_mm": [
+      "OCTA500_10301",
+      "OCTA500_10304"
+    ],
+    "graph_checks": "Exact node records, edge records and shapes, plus spot checks of analysis area, coverage, length density and total endpoint count vs feature CSV."
+  },
+  "by_field": {
+    "3": {
+      "eyes": 179,
+      "dr": 29,
+      "median_reference_interior_per_mm2": 18.768214365852337,
+      "median_dilated_interior_per_mm2": 0.12798918650917304,
+      "median_paired_change_interior_per_mm2": -18.636968111545677,
+      "median_reference_coverage_percent": 45.14700846338241,
+      "median_dilated_coverage_percent": 89.38026291876173,
+      "median_paired_change_length_mm_per_mm2": -4.520668978727812,
+      "spearman_original_vs_15um_interiors": 0.6059843254387717
+    },
+    "6": {
+      "eyes": 116,
+      "dr": 35,
+      "median_reference_interior_per_mm2": 19.51820274919925,
+      "median_dilated_interior_per_mm2": 1.589996883329241,
+      "median_paired_change_interior_per_mm2": -17.686869012394354,
+      "median_reference_coverage_percent": 40.078028542781006,
+      "median_dilated_coverage_percent": 74.12954162223645,
+      "median_paired_change_length_mm_per_mm2": 0.5875143618425027,
+      "spearman_original_vs_15um_interiors": 0.8088186675892823
+    }
+  },
+  "input_sha256": {
+    "data/manifests/octa500_manifest.csv": "28021d759619fdb1d44cbb1013dfca734dad8c11ac931ccf41a3a864edc1c7e8",
+    "config.yaml": "6fa2bf03dc175e3d2d2593a90139b1e71df3d0513b1d565ae19a24179a335e9c",
+    "outputs/exploratory_20261116_step0/endnode_mechanism/end_node_parts.csv": "f91a8a0753ceaff6a0d66d58565a7c9be34704f4525a9a726d2b08f9e9005adf",
+    "outputs/exploratory_20261009/pipeline/features.csv": "b14cbdf81413fed449fde383c6217716d02e08fe6e965bc744a51603c887dae2",
+    "outputs/exploratory_20261116_step0/perturbation/dilate1/pipeline/features.csv": "9e4b6ad9643bc53de11a3208e9b897189a0417ef0f204a25f0d840c475c65292"
+  }
+}

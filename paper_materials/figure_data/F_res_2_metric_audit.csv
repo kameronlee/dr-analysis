@@ -1,0 +1,34 @@
+panel,metric,label,row,estimate,x,ci95_lo_hc3,ci95_hi_hc3,n,class_density_independent_replicated,class_rank_stable,class_survives_perturbation,class_survives_quality_A,class_robust_candidate
+a,end_density_per_mm2_pre,End-node density (raw skeleton),0,pooled,-1.221122736370385,-1.536975942293646,-0.9052695304471239,295.0,True,False,True,True,False
+a,end_density_per_mm2_pre,End-node density (raw skeleton),0,"pooled, quality set A",-0.5135398730873733,-0.7970045898214134,-0.2300751563533331,295.0,True,False,True,True,False
+b,end_density_per_mm2_pre,End-node density (raw skeleton),0,worst rank agreement,0.48163610502441084,,,,True,False,True,True,False
+a,end_density_per_mm2_post,End-node density (cleaned graph),1,pooled,-0.7361239423058153,-0.9507870352176993,-0.5214608493939314,295.0,True,False,True,True,False
+a,end_density_per_mm2_post,End-node density (cleaned graph),1,"pooled, quality set A",-0.321878739449035,-0.5275138442358845,-0.11624363466218546,295.0,True,False,True,True,False
+b,end_density_per_mm2_post,End-node density (cleaned graph),1,worst rank agreement,0.7513583324746977,,,,True,False,True,True,False
+a,FI_random,"FI, random removal",2,pooled,-0.32108619346380585,-0.44369811831909645,-0.19847426860851525,295.0,True,False,True,True,False
+a,FI_random,"FI, random removal",2,"pooled, quality set A",-0.19950033573563578,-0.3287320431490925,-0.07026862832217906,295.0,True,False,True,True,False
+b,FI_random,"FI, random removal",2,worst rank agreement,0.666501370493587,,,,True,False,True,True,False
+a,fractal_dimension,Fractal dimension,3,pooled,-0.21123043760863577,-0.3090955837809547,-0.11336529143631682,295.0,False,True,False,False,False
+a,fractal_dimension,Fractal dimension,3,"pooled, quality set A",0.008519114741998207,-0.09730070417577336,0.11433893365976977,295.0,False,True,False,False,False
+b,fractal_dimension,Fractal dimension,3,worst rank agreement,0.9027409871738539,,,,False,True,False,False,False
+a,FI_adaptive_betweenness,"FI, targeted removal (preregistered)",4,pooled,-0.1921035225807107,-0.34725389114496696,-0.03695315401645444,295.0,False,False,False,False,False
+a,FI_adaptive_betweenness,"FI, targeted removal (preregistered)",4,"pooled, quality set A",0.019102936305011503,-0.14129972459436338,0.17950559720438639,295.0,False,False,False,False,False
+b,FI_adaptive_betweenness,"FI, targeted removal (preregistered)",4,worst rank agreement,0.5190550917498379,,,,False,False,False,False,False
+a,junction_density_per_mm2_pre,Junction density (raw skeleton),5,pooled,-0.07571355214492892,-0.11507264439633091,-0.03635445989352693,295.0,False,True,True,True,False
+a,junction_density_per_mm2_pre,Junction density (raw skeleton),5,"pooled, quality set A",-0.058043717939201545,-0.10664047712437713,-0.009446958754025958,295.0,False,True,True,True,False
+b,junction_density_per_mm2_pre,Junction density (raw skeleton),5,worst rank agreement,0.827384763459084,,,,False,True,True,True,False
+a,junction_density_per_mm2_post,Junction density (cleaned graph),6,pooled,0.016253910958411534,-0.028376353786967123,0.06088417570379019,295.0,False,True,False,False,False
+a,junction_density_per_mm2_post,Junction density (cleaned graph),6,"pooled, quality set A",-0.03699198817428339,-0.09585884226296526,0.021874865914398474,295.0,False,True,False,False,False
+b,junction_density_per_mm2_post,Junction density (cleaned graph),6,worst rank agreement,0.8195907350448811,,,,False,True,False,False,False
+a,vessel_density,Vessel area density,7,pooled,0.047163520462792895,-0.009555723138811714,0.1038827640643975,295.0,False,True,False,True,False
+a,vessel_density,Vessel area density,7,"pooled, quality set A",0.10911272767352752,0.047638653078367954,0.17058680226868708,295.0,False,True,False,True,False
+b,vessel_density,Vessel area density,7,worst rank agreement,0.9747954721402716,,,,False,True,False,True,False
+a,loop_density_per_mm2,Loop density,8,pooled,0.06522880074736456,-0.0002563204565033672,0.1307139219512325,295.0,False,False,False,False,False
+a,loop_density_per_mm2,Loop density,8,"pooled, quality set A",-0.0385508622404254,-0.12052524799866171,0.04342352351781092,295.0,False,False,False,False,False
+b,loop_density_per_mm2,Loop density,8,worst rank agreement,0.738781829975101,,,,False,False,False,False,False
+a,FIperf_adaptive_betweenness,Coverage fragility,9,pooled,0.11084635593109249,0.02360603142536688,0.1980866804368181,295.0,False,True,True,False,False
+a,FIperf_adaptive_betweenness,Coverage fragility,9,"pooled, quality set A",0.051470730416961104,-0.05059518730791238,0.1535366481418346,295.0,False,True,True,False,False
+b,FIperf_adaptive_betweenness,Coverage fragility,9,worst rank agreement,0.8463373297344798,,,,False,True,True,False,False
+a,faz_area_mm2,FAZ area (positive control),10,pooled,0.951174281424735,0.6458934897717223,1.2564550730777477,295.0,True,True,True,True,True
+a,faz_area_mm2,FAZ area (positive control),10,"pooled, quality set A",0.596756188419083,0.19360259988839174,0.9999097769497742,295.0,True,True,True,True,True
+b,faz_area_mm2,FAZ area (positive control),10,worst rank agreement,,,,,True,True,True,True,True
