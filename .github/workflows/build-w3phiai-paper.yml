@@ -2,7 +2,8 @@ name: Build W3PHIAI paper PDF
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths:
       - 'paper_materials/W3PHIAI-27/paper.tex'
       - 'paper_materials/W3PHIAI-27/references.bib'
@@ -19,12 +20,21 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+      - name: Verify paper sources
+        run: |
+          test -s paper_materials/W3PHIAI-27/paper.tex
+          test -s paper_materials/W3PHIAI-27/references.bib
+          ls -l paper_materials/W3PHIAI-27/figures/*.pdf
       - name: Compile LaTeX PDF
         uses: xu-cheng/latex-action@v4
         with:
           root_file: paper.tex
           working_directory: paper_materials/W3PHIAI-27
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+      - name: Verify generated PDF
+        run: |
+          test -s paper_materials/W3PHIAI-27/paper.pdf
+          pdfinfo paper_materials/W3PHIAI-27/paper.pdf | grep Pages
       - name: Commit updated paper.pdf
         run: |
           git config user.name 'github-actions[bot]'
