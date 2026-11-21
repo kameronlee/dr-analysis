@@ -1,0 +1,36 @@
+name: Build W3PHIAI paper PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'paper_materials/W3PHIAI-27/paper.tex'
+      - 'paper_materials/W3PHIAI-27/references.bib'
+      - 'paper_materials/W3PHIAI-27/figures/**'
+      - '.github/workflows/build-w3phiai-paper.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Compile LaTeX PDF
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: paper.tex
+          working_directory: paper_materials/W3PHIAI-27
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+      - name: Commit updated paper.pdf
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add paper_materials/W3PHIAI-27/paper.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m 'Rebuild W3PHIAI paper PDF from updated LaTeX'
+            git push
+          fi
