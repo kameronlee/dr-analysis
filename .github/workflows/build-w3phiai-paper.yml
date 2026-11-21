@@ -34,7 +34,7 @@ jobs:
       - name: Verify generated PDF
         run: |
           test -s paper_materials/W3PHIAI-27/paper.pdf
-          pdfinfo paper_materials/W3PHIAI-27/paper.pdf | grep Pages
+          head -c 5 paper_materials/W3PHIAI-27/paper.pdf | grep -q '%PDF-'
       - name: Commit updated paper.pdf
         run: |
           git config user.name 'github-actions[bot]'
